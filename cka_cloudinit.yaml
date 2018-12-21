@@ -1,0 +1,14 @@
+package_update: true
+package_upgrade: true
+ssh_authorized_keys:
+ - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC6BHsMVBg66wU+Q8F1xKp8G1gYxTYILMsJUti2sNhCq5eIebEPw3wo7nrKkYbBjDUsNguY7tRGyfo4bWMha6ausw7HaS8XcPksrGM1+82CQbFp8A7kT2uv3SSpjleGVtuhojSB7AYOQmkJVMWlWz9xgorEnRHNHiHbAu2IoXCdVGrCYb3wofqAbCsOJvg7iWEV7/QWDIqQeWIVh8dngUEf+hUWHeXquyXCJJq2HKsxL0ECyKYgHLTW1GhAxP994zJzQ7eDcnQo4qmjPwfgId5H4sdy1HkEbvqVys287yIB9zQuZvwfa+4OURMem0krgu21EHhdv++F6Rh/rmpX2wTX idobos@ido3510
+users:
+ - name: ubuntu
+   sudo: ALL=(ALL) NOPASSWD:ALL
+   home: /home/ubuntu
+   shell: /bin/bash
+   groups: [adm, audio, cdrom, dialout, floppy, video, plugdev, dip, netdev]
+   lock_passwd: True
+   gecos: Ubuntu
+   ssh_authorized_keys:
+     - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC6BHsMVBg66wU+Q8F1xKp8G1gYxTYILMsJUti2sNhCq5eIebEPw3wo7nrKkYbBjDUsNguY7tRGyfo4bWMha6ausw7HaS8XcPksrGM1+82CQbFp8A7kT2uv3SSpjleGVtuhojSB7AYOQmkJVMWlWz9xgorEnRHNHiHbAu2IoXCdVGrCYb3wofqAbCsOJvg7iWEV7/QWDIqQeWIVh8dngUEf+hUWHeXquyXCJJq2HKsxL0ECyKYgHLTW1GhAxP994zJzQ7eDcnQo4qmjPwfgId5H4sdy1HkEbvqVys287yIB9zQuZvwfa+4OURMem0krgu21EHhdv++F6Rh/rmpX2wTX idobos@ido3510
