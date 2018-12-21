@@ -2,8 +2,11 @@
 sudo apt-get install -y docker.io
 sudo echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" > /etc/apt/sources.list.d/kubernetes.list
 sudo apt-get update
-sudo apt-get install -y kubeadm kebectl kebelet
+sudo apt-get install -y kubeadm kubectl kubelet
 sudo kubeadm init --pod-network-cidr 192.168.0.0/16
+echo "2 minutky cakania ..."
+sleep 120
+echo "Pokracujem"
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
