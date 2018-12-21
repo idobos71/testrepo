@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt-get install -y docker.io
-sudo echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" > /etc/apt/sources.list.d/kubernetes.list
+sudo bash -c 'echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" > /etc/apt/sources.list.d/kubernetes.list'
 sudo apt-get update
 sudo apt-get install -y kubeadm kubectl kubelet
 sudo kubeadm init --pod-network-cidr 192.168.0.0/16
