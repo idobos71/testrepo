@@ -14,7 +14,7 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 kubectl apply -f \
 https://docs.projectcalico.org/v3.3/getting-started/kubernetes/installation/hosted/etcd.yaml
 kubectl apply -f \
-https://docs.projectcalico.org/v3.3/getting-started/kubernetes/installation/hosted/etcd.yaml
+https://docs.projectcalico.org/v3.3/getting-started/kubernetes/installation/hosted/calico.yaml
 kubectl apply -f \
 https://docs.projectcalico.org/v3.3/getting-started/kubernetes/installation/rbac.yaml
 source <(kubectl completion bash)
